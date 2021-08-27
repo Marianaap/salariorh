@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#FFEFD5"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/salario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Salário Bruto:"
+        android:textAlignment="center"
+        android:textColor="#787C7C"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/salarioedit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#F44336" />
+
+
+    <TextView
+        android:id="@+id/dependentes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Dependentes:"
+        android:textAlignment="center"
+        android:textColor="#787C7C"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/dependentesedit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#F44336" />
+
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#787C7C"
+        android:onClick="calcular"
+        android:text="Calcular"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#787C7C"
+        android:onClick="limpar"
+        android:text="Limpar"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
